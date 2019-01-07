@@ -508,6 +508,12 @@ $(document).ready(function() {
 
   //p//
 
+  var parallaxModeling = new Dictionary('parallax modeling');
+  parallaxModeling.wordType = 'n';
+  parallaxModeling.word = 'parallax modeling';
+  parallaxModeling.defOfWord = 'The approach to modeling a referent system with multiple models, each of which may model different aspects/facets or sets of attributes of that referent.<br>Notes: "Triangulation" is often used as a synonym.  Parallax relies heavily on cross-model validation; and in the event the referent system is unavailable for experimentation, cross-model validation is the only way to approach an accurate model.';
+  parallaxModeling.combo = parallaxModeling.word + ':<br>' + '&#40;' + parallaxModeling.wordType + '&#41; ' + parallaxModeling.defOfWord;
+  
   var parallel = new Dictionary('parallel');
   parallel.wordType = 'n';
   parallel.word = 'parallel';
@@ -776,7 +782,7 @@ $(document).ready(function() {
 
   var oLetters = [observationalCongruency];
 
-  var pLetters = [parallel, parallelSimulation, parallelSimulator, petitioPrincipii, physiomimetic, plectics, predict, prediction, predictiveValidity ]
+  var pLetters = [parallaxModeling, parallel, parallelSimulation, parallelSimulator, petitioPrincipii, physiomimetic, plectics, predict, prediction, predictiveValidity ]
 
   var rLetters = [replicativeValidity, representation, resolution, resolve];
 
