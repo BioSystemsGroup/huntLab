@@ -461,6 +461,24 @@ $(document).ready(function() {
   mechanism.word = 'mechanism';
   mechanism.defOfWord = 'a set of objects and interactions that measurably transforms material.  An analog mechanism has four aspects&#58; &#40;i&#41; phenomenal, &#40;ii&#41; componential &#40;iii&#41; causal, and &#40;iv&#41; organizational. Each aspect is measured differently.  We can measure: 1&#41; how that mechanism is perceived by the systems it affects; 2&#41; how many, or the type of, subcomponents that constitute it; 3&#41; the causal &#40;AKA stimulus-response, data driven&#41; event chains within; and 4&#41; network/graph of relationships amongst subcomponents or events. Each measure provides a different way of looking at, and/or thinking about, an analog mechanism.Each aspect is measured differently. Each measure provides a different way of mapping analog mechanisms to biological counterparts.<br>Adapted from a Darden L (2002) Strategies for Discovering Mechanisms: Schema Instantiation, Modular Subassembly, Forward/Backward Chaining. Phil Sci 69(S3):S354¡©S365.'
   mechanism.combo = mechanism.word + ':<br>' + '&#40;' + mechanism.wordType + '&#41; ' + mechanism.defOfWord;
+  
+  var modal = new Dictionary('modal');
+  modal.wordType = 'adj';
+  modal.word = 'modal';
+  modal.defOfWord = 'The case that a system has more than 1 mode.<br>  Notes: Modal logic is the (set of) logic(s) dealing with different modes of implication: necessary, possible, permitted, forbidden, always, never, etc.  A bimodal distribution is one with 2 peaks in its PDF.  To mesh with the typical conceptions of math and logic, where only a single form of implication is used, non-modal = unimodal.';
+  modal.combo = modal.word + ':<br>' + '&#40;' + modal.wordType + '&#41; ' + modal.defOfWord;
+
+  var modality = new Dictionary('modality');
+  modality.wordType = 'adj';
+  modality.word = 'modality';
+  modality.defOfWord = 'The extent to which a system is modal.<br>  Notes: This may be quantifiable.  E.g. water has 3 phases (modes): ice, liquid, and vapor. But, as with water, such a quantification might exhibit discretization problems at the boundaries, e.g. amorphous ice.  An analogous situation obtains when conflating mechanism and phenomenon, the extent to which a systems modality is estimated through induction (phenomenon → mechanism) or deduction (mechanism → phenomenon).';
+  modality.combo = modality.word + ':<br>' + '&#40;' + modality.wordType + '&#41; ' + modality.defOfWord;
+  
+  var mode = new Dictionary('mode');
+  mode.wordType = 'n';
+  mode.word = 'mode';
+  mode.defOfWord = 'A particular region of either a state or behavior space of a given system.<br>  Notes: Mode as a manner of doing things, as in &#34;à la mode&#34;, means a collection of paths through a common region of state or behavior space.  The statistical mode means a common sample from the sample space.';
+  mode.combo = mode.word + ':<br>' + '&#40;' + mode.wordType + '&#41; ' + mode.defOfWord;
 
   var model = new Dictionary('model');
   model.wordType = 'n';
@@ -754,7 +772,7 @@ $(document).ready(function() {
 
   var lLetters = [levelOfResolution];
 
-  var mLetters = [measure, measurement, mechanism, model, modelingFormalism, morphism]
+  var mLetters = [measure, measurement, mechanism, modal, modality, mode, model, modelingFormalism, morphism]
 
   var oLetters = [observationalCongruency];
 
